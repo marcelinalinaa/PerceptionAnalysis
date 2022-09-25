@@ -1,0 +1,30 @@
+TWEETS DATA
+- raw data = tweetduabulan_nolink.csv
+- split data 
+  > dataA (80%) = tweetduabulan_rest071021.csv
+  > dataB (20%) = tweetduabulan_sample071021.csv
+- after manual labeling
+  > dataA (80%) = tweetduabulan_rest_sentiment.csv
+  > dataB (20%) = tweetduabulan_sample_sentiment.csv
+*all data ))
+all_df = 'completedata_fix.csv'
+a_df = 'completedata_rest.csv'
+b_df = 'completedata_sample.csv'
+
+MATERIAL
+- malaysian location = my_loc.txt
+- slang words = modified_slang_words.txt
+- InSet lexicon 
+- SentiStrengthID lexicon
+- additional lexicon = additional_lexicon.csv
+- modified lexicon (FIXED) = modified_lexicon.csv
+
+SVM MODEL
+training 80% lexicon = 'model/model_lexicon2_181121.sav'
+training 20% manual = 'model/model_manual_test3_261121.sav'
+training 80% manual = 'model/model_manual2_181121.sav'
+
+LDA
+corpus = model/corpus2_vaksintweet.pkl
+dictionary = 'model/dictionary2_vaksintweet.gensim'
+lda model = 'model/lda2_11topic.sav'
