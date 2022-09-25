@@ -1,5 +1,4 @@
 TWEETS DATA
-- raw data = tweetduabulan_nolink.csv
 - split data 
   > dataA (80%) = tweetduabulan_rest071021.csv
   > dataB (20%) = tweetduabulan_sample071021.csv
